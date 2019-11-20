@@ -1,0 +1,144 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ELEE	3720 Electromechanical Energy Conversion: Report template
+% By Ratheesh Ravindran
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{chngcntr}
+\usepackage{caption}
+\counterwithin{figure}{section}
+\usepackage{framed,color,verbatim}
+\definecolor{shadecolor}{rgb}{.9, .9, .9}
+
+\newenvironment{block}%
+   {\snugshade\verbatim}%
+   {\endverbatim\endsnugshade}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0,0,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegray},
+    %keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{black},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+\begin{document}
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.1mm}} 
+\center % Center everything on the page
+ 
+%---------------------------------------------------------------------------------
+%	HEADING SECTIONS (Enter the Homework/assignment No., only)
+%---------------------------------------------------------------------------------
+%\textsc{\Large ELEE	3720}\\[0.5cm] % heading course Number
+\textsc{\large STAT 5814: APPLIED TIME SERIES ANALYSIS}\\[0.5cm] % heading course name
+%\textsc{\large Homework/Assignment No:- }\\[0.5cm] % Minor heading
+%---------------------------------------------------------------------------------
+%	TITLE SECTION (Replace 'TITLE' with the Homework/assignment Name/title)
+%---------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \textbf{Midterm Exam 2 Report}} % Title of your Homework/assignment
+\HRule \\[1.5cm]
+ 
+%---------------------------------------------------------------------------------
+%	AUTHOR SECTION (EDIT THE NAME and T.NO., only)
+%--------------------------------------------------------------------------------
+\begin{multicols}{2}
+\begin{minipage}[t]{0.45\textwidth}
+\large
+\emph{Submitted By:}\\
+Sayantan Majumdar\\ \href{mailto:smxnv@mst.edu}{smxnv@mst.edu} \\
+\end{minipage}
+\begin{minipage}[t]{0.45\textwidth} \large
+\begin{flushright}
+\emph{Course Instructor:} \\
+Dr. Akim Adekpedjou\\ \href{mailto: akima@mst.edu}{akima@mst.edu}\\ % Supervisor's Name
+\end{flushright}
+\end{minipage}
+\end{multicols}
+{\large \today}\\[1cm] % Date, change the \today to a set date if you want to be precise
+\vspace{5pt}
+\includegraphics[scale=0.3]{mst_logo_new.png}% \\[0.5cm] % 
+\vfill % Fill the rest of the page with white-space
+
+\end{titlepage}
+%\include{GradingRubric}
+\pagestyle{fancy}
+\fancyhf{}
+\chead{\small{\textit{STAT 5814 $\lvert$ Applied Time Series Analysis $\lvert$ Midterm Exam 2 $\lvert$ Sayantan Majumdar}}}
+\rfoot{\thepage}
+\renewcommand{\headheight}{26pt}
+\tableofcontents          % Required
+\listoffigures
+%\listoftables
+\newpage
+
+% Do not edit the below sections, enter all details in respective chapters
+% Add the images/screen-shorts to the image folder and insert them in the respective chapters
+\section{Problem 1}
+%\addcontentsline{toc}{section}{Problem 1}
+\input{Chapters/Problem_1.tex}
+
+\section{Problem 2}
+%\addcontentsline{toc}{section}{Problem 2}
+\input{Chapters/Problem_2.tex}
+
+\section{Problem 3}
+%\addcontentsline{toc}{section}{Problem 3}
+\input{Chapters/Problem_3.tex}
+
+\section{Problem 4}
+%\addcontentsline{toc}{section}{Problem 4}
+\input{Chapters/Problem_4.tex}
+
+
+%\appendix
+%\section{Appendix}
+%\input{Chapters/06_Appendix1}
+
+
+%---------------------------------------------------------------------------------
+%	Example SECTION (Remove this section to finalize the report.
+
+
+%\section{Example steps}
+%\input{Chapters/Example} % Remove this line to finalize the report.
+%---------------------------------------------------------------------------------
+
+
+\end{document}
+
+
+% Note: Again, you don’t need to answer just the above questions. They are being provided to give you a flavor of what is required for each section. Use your judgment and initiative to add or subtract based on the specific homework. You can add any other conclusion or discuss any other aspect of your effort that you think it is important to highlight.
+
+% Also ensure to attach the MATLAB or MULTISIM files with this report
