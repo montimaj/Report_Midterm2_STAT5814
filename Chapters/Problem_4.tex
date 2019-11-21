@@ -252,14 +252,14 @@ intercept -1.43600896 -1.3367935
 \end{block}
 \normalsize Here, we see that the transformed dataset has lower AIC and BIC values along with lesser parameters wherein the confidence intervals do not contain zero. Therefore, data transformation is required.
 
-So from the above analyses, the final model chosen is the ARIMA(1, 0, 2) model where BoxCox transformation ($\lambda \approx 0.75$) is used. The model equation is given by Eq. \eqref{eq:final_model}.
+So from the above analyses, the final model chosen is the ARIMA(1, 2, 2) model (ARMA(1, 2) for the second order differences) where BoxCox transformation ($\lambda \approx 0.75$) is used. The model equation is given by Eq. \eqref{eq:final_model}.
 \begin{equation}
     Z_t = -1.3864 + 0.5021Z_{t-1} + 1.6531\varepsilon_{t-1} -0.7389\varepsilon_{t-2} + \varepsilon_t
     \label{eq:final_model}
 \end{equation}
- where $\varepsilon \sim \mathcal{N}(0, 4.409)$ and $Z_t = $ BoxCox($X_t$, $\lambda$), $\lambda \approx 0.75$, $t = \{1, 2, 3, \dots\}$, and $X_t$ being the original FLE data.
+ where $\varepsilon \sim \mathcal{N}(0, 4.409)$ and $Z_t = $ BoxCox($\nabla^2{X_t}$, $\lambda$), $\lambda \approx 0.75$, $t = \{1, 2, 3, \dots\}$, and $X_t$ being the original FLE data.
 \end{enumerate}
 
-\noindent If the entire duration of the time series is considered, then the life expectancy has greatly varied before 1950 but there is an overall increase in the life expectancy. From 1950 onward, the life expectancy is mostly the same. 
+\noindent If the entire duration of the time series is considered, then the life expectancy has greatly varied before 1950 but there is an overall increase in the life expectancy. From 1950 onward, the life expectancy keeps on increasing linearly. 
 
 \noindent When individual years are taken into account, then the sharp increments and decrements in the values can be attributed to the improved healthcare systems and degrading economy or wars respectively.
